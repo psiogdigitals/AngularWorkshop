@@ -1,0 +1,26 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+/*body { margin: 30px; }*/
+.awesome {
+    position: relative;
+    color: #2E4941;
+    font-size: 1.4rem;
+    /*color: #aaa;*/
+    /*font-size: 16px;*/
+}
+
+/*.awesome input {*/
+    /*width: 250px;*/
+    /*height: 32px;*/
+
+    /*background: #fcfcfc;*/
+    /*border: 1px solid #aaa;*/
+    /*border-radius: 5px;*/
+    /*box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;*/
+/*}*/
+
+.awesome input { text-indent: 32px;}
+.awesome .icon {
+    position: absolute;
+    margin-top: 2.3%;
+    left: 1.5%;
+}

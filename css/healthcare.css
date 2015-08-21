@@ -1,0 +1,17 @@
+body {
+    padding-top: 50px;
+}
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.navbar-inverse{
+    background: -webkit-linear-gradient(top left, #222 0%, #767578 100%);
+    background: linear-gradient(to bottom right, #222  0%, #767578 100%);
+    border-color: #767578;
+}
+
+.navbar-nav li:active{
+    background-color: #000000;
+}

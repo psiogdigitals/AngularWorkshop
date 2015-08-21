@@ -1,0 +1,365 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+html{
+    font-size: 1rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-weight: 300;
+}
+body ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-weight: 300;
+}
+body :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    opacity: 1;
+    font-weight: 300;
+}
+body ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    opacity: 1;
+    font-weight: 300;
+}
+body :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-weight: 300;
+}
+#navbarbutton
+{
+    width: 50px;
+}
+.outerwrapper {
+    background: #50a3a2;
+    background: -webkit-linear-gradient(top left, #53e3a6  0%, #215150 100%);
+    background: linear-gradient(to bottom right, #53e3a6  0%, #215150 100%);
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 0; */
+    width: 100%;
+    /* height: 400px; */
+    /*margin-top: 80px;*/
+    /* overflow: hidden; */
+}
+.outerwrapper.form-success .outercontainer h1 {
+    -webkit-transform: translateY(85px);
+    -ms-transform: translateY(85px);
+    transform: translateY(85px);
+}
+.outercontainer {
+    /*max-width: 600px;*/
+    margin: 0 auto;
+    padding: 80px 0;
+    width: 100%;
+    text-align: center;
+}
+.outercontainer h1 {
+    font-size: 40px;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in-put;
+    transition-timing-function: ease-in-put;
+    font-weight: 200;
+}
+.outerform {
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+}
+ input:not([type=submit]) {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     outline: 0;
+     border: 1px solid rgba(255, 255, 255, 0.4);
+     background-color: rgba(255, 255, 255, 0.2);
+     width: 25%;
+     border-radius: 3px;
+     padding: 2% 1%;
+     /*margin: 0 auto 10px auto;*/
+     display: block;
+     text-align: center;
+     font-size: 1.2rem;
+     color: #004f37;
+     -webkit-transition-duration: 0.25s;
+     transition-duration: 0.25s;
+     font-weight: 300;
+     display: block;
+     margin: 0 1% 1% 0;
+
+}
+
+input[type="date"]{
+    /*padding: 14px 1px;*/
+}
+ input[type="date"]:before {
+     content: attr(placeholder) !important;
+     padding-right: 1px;
+     font-weight: 300;
+     font-size: 1.2rem;
+}
+
+ input:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+input:valid:not([type=submit]) {
+    background: white url(http://webdesigntutsplus.s3.amazonaws.com/tuts/214_html5_form_validation/demo/images/valid.png) no-repeat 97% center;
+}
+
+ input:focus:valid:not([type=submit]) {
+     width: 35%;
+     background:white url(http://webdesigntutsplus.s3.amazonaws.com/tuts/214_html5_form_validation/demo/images/valid.png) no-repeat 97% center;
+ }
+
+input:focus:invalid:not([type=submit]) {
+    width: 35%;
+    border: solid 1px #ff767b;
+    background:#ffe6e6 url(http://webdesigntutsplus.s3.amazonaws.com/tuts/214_html5_form_validation/demo/images/invalid.png) no-repeat 97% center;
+}
+
+ button,a {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    background-color: #881408;
+    border: 0;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 3px;
+    width: 125px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+
+ button:hover,a:hover {
+    background-color: #ff1808;
+    color: white;
+}
+
+.registrationcontainer
+{
+    display: inline-block;
+    width: 90%;
+    margin-left: 7%;
+}
+
+.registrationcontainer input
+{
+    display: inline-block;
+    float: left;
+
+}
+.registrationcontainer button
+{
+    display: inline-block;
+    float: left;
+    margin-left: 2px;
+    margin-top: 8px;
+}
+
+.loginConatiner
+{
+    width: 90%;
+    display: inline-block;
+}
+
+.loginConatiner input:not([type=submit])
+{
+    margin: 0 auto 10px auto;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .registrationcontainer
+    {
+        width: 80%;
+    }
+    .loginConatiner {
+        width: 80%;
+    }
+
+
+
+    input:not([type=submit]) {
+        width: 45%;
+        margin: 0 1.2% 1.2% 0;
+    }
+
+    input:focus:valid:not([type=submit]){
+        width: 49%;
+    }
+
+    input:focus:invalid:not([type=submit]){
+        width: 49%;
+    }
+}
+
+@media (min-width: 512px) and (max-width: 768px) {
+    .registrationcontainer
+    {
+        width: 80%;
+    }
+    .loginConatiner {
+        width: 80%;
+    }
+
+    input:not([type=submit]) {
+        width: 80%;
+        margin: 0 0 1.4% 0;
+    }
+
+    input:focus:valid:not([type=submit]){
+        width: 85%;
+    }
+
+    input:focus:invalid:not([type=submit]){
+        width: 85%;
+    }
+}
+
+@media (max-width: 512px) {
+    .registrationcontainer
+    {
+        width: 90%;
+    }
+
+    .loginConatiner {
+        width: 90%;
+    }
+
+    input:not([type=submit]) {
+        width: 85%;
+        margin: 0 0 1.4% 0;
+    }
+
+    input:focus:valid:not([type=submit]){
+        width: 90%;
+    }
+
+    input:focus:invalid:not([type=submit]){
+        width: 90%;
+    }
+
+}
+
+.animateview.ng-enter{
+    top: 0;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: upfrombottom;
+    animation-name: upfrombottom;
+}
+
+@-webkit-keyframes upfrombottom {
+    0%{
+        top: 100%;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes upfrombottom {
+    0%{
+        top: 100%;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.animateview.ng-leave{
+    top: 0;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: downfromtop;
+    animation-name: downfromtop;
+}
+
+@-webkit-keyframes downfromtop {
+    0%{
+        top: 0;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes downfromtop {
+    0%{
+        top: 0;
+    }
+    100% {
+        top: 100%;
+    }
+}
+/* font awesome */
+
+input.icon {
+    padding:5px;
+}
+input.icon::-webkit-input-placeholder {
+    font-family:'FontAwesome';
+}
+input.icon::-moz-placeholder {
+    font-family:'FontAwesome';
+}
+input.icon::-ms-input-placeholder {
+    font-family:'FontAwesome';
+}
+
+
+#filtersubmit {
+    position: relative;
+    z-index: 1;
+    left: -25px;
+    top: 1px;
+    color: #7B7B7B;
+    cursor:pointer;
+    width: 0;
+}
+
+/* Bootstrap Overriding*/
+
+.navbar-inverse {
+    background-color: #2E4941;
+    border-color: #2E4941;
+}
+
+.navbar-brand
+{
+    background-color: #2E4941;
+    border-right: 1pt solid #686868;
+    color: white !important;
+}
+
+
+.navbar-inverse .navbar-nav>li>a {
+    background-color: #2E4941;
+    border-right: 1pt solid #686868;
+    border-radius: 4px;
+    color: white;
+    width : 100%;
+}

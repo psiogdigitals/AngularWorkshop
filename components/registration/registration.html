@@ -1,0 +1,34 @@
+<div class="registrationcontainer">
+
+    <!--<div >-->
+        <!--<span class="fa fa-user icon "></span>-->
+    <input type="text" ng-model="user.mobile"  required pattern="^[789]\d{9}$" placeholder="Mobile">
+
+        <!--<i  class="fa fa-search"></i>-->
+    <!--</div>-->
+    <input type="text" ng-model="user.firstName" required placeholder="First name" />
+    <!--<div class="awesome">        -->
+        <input type="text" class="icon-entypo-user" ng-model="user.lastName"   required placeholder="Last name">
+    <!--</div>-->
+
+    <div class="awesome">
+        <!--<span class="fa fa-envelope icon "></span>-->
+        <input type="email" class="icon-entypo-envelope" ng-model="user.email"   required  pattern="^\S+@(([a-zA-Z0-]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6})$" placeholder="Email">
+    </div>
+    <input type="text" ng-model="user.address"  required placeholder="Address">
+
+    <input type="date" ng-model="user.dob"  required placeholder="dob ">
+
+    <input type="text" ng-model="user.pincode"  required pattern="^[0-9]{6}(?:-[0-9]{4})?$" placeholder="Serviceable Area">
+
+    <input type="text" ng-model="user.username"  required placeholder="Username">
+
+    <!--<input type="password" ng-model="user.password"-->
+           <!--ng-model="user.confirmPassword"  required placeholder="Password">-->
+
+    <!--<input type="password" required placeholder="Confirm password"-->
+           <!--ng-model="user.confirmPassword"-->
+           <!--compare-input="user.password">-->
+
+    <button type="submit" ng-click="addUser(user)" >Register</button>
+</div>
